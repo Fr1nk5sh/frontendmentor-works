@@ -1,0 +1,7 @@
+div {
+    width: 100px;
+    height: 150px;
+    background-color: burlywood;
+    border-radius: 5px;
+    transition: 3s;
+}
