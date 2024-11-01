@@ -1,0 +1,158 @@
+@import url("https://fonts.google.com/specimen/Young+Serif");
+@import url("https://fonts.google.com/specimen/Outfit");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+    /* FONT-WEIGHT */
+--FONTWEIGHT-1: 400;
+--FONTWEIGHT-2: 600;
+--FONTWEIGHT-3: 700;
+
+--PADDING: 30px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'outfit';
+    background-color: var(--Stone-100);
+}
+
+main {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+.mainDiv {
+    flex-grow: 1;
+    padding: var(--PADDING);
+    padding-top: 0px;
+    /* margin: 100px; */
+    background-color: var(--White);
+    /* border-radius: 20px; */
+}
+
+.mainDiv > div {
+    padding-bottom: var(--PADDING);
+}
+
+img {
+    display: block;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Young Serif';
+    font-weight: var(--FONTWEIGHT-1);
+    margin: 20px 0px 15px 0px;
+}
+
+h1 {
+    color: var(--Stone-900);
+    font-size: 40px;
+}
+
+h2 {
+    color: var(--Brown-800);
+}
+
+h3 {
+    color: var(--Rose-800);
+    margin-bottom: 10px;
+}
+
+p, span, td, li {
+    color: var(--Stone-600);
+    line-height: 30px;
+    font-size: 16px;
+}
+
+span {
+    font-weight: var(--FONTWEIGHT-3);
+}
+
+#prepTime {
+    padding: var(--PADDING);
+    background-color: var(--Rose-50);
+    border-radius: 10px;
+}
+
+:where(#prepTime ~ div) {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+::marker {
+    color: var(--Brown-800);
+    font-family: 'outfit';
+    font-weight: var(--FONTWEIGHT-3);
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    padding: 20px 0px 10px 30px;
+}
+
+td:nth-child(even) {
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+.prepTime ~ div, tr {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+#nutri, #lastCell {
+    border: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        max-width: 700px;
+        margin: 100px auto;
+        border-radius: 20px;
+    }
+    .imgDiv {
+        width: 92%;
+        margin: 30px 0px 10px;
+    }
+    img {
+        border-radius: 10px;
+    }
+    .mainDiv {
+        border-radius: inherit;
+    }
+}
