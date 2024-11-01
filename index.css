@@ -1,5 +1,6 @@
-@import url("https://fonts.google.com/specimen/Young+Serif");
-@import url("https://fonts.google.com/specimen/Outfit");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 * {
     margin: 0;
